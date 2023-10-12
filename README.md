@@ -1,9 +1,9 @@
-h1 align="center">
+<h1> align="center">
   fakturowania tool
 </h1>
 
 <div align="center">
-  <img  src="https://cdn.discordapp.com/attachments/1162128087228625109/1162161932451721266/image.png">
+  <img  src="https://cdn.discordapp.com/attachments/1162128087228625109/1162161932451721266/image.png" size="20">
   <br>
   <img  src="https://img.shields.io/github/languages/top/karolwelc/fakturownia-tool?color=6d00c1">
   <img  src="https://img.shields.io/github/stars/karolwelc/fakturownia-tool?color=6d00c1&logoColor=6d00c1">
