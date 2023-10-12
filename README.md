@@ -1,4 +1,4 @@
-h1 align="center">
+<h1 align="center">
   fakturowania tool
 </h1>
 
@@ -35,8 +35,7 @@ Make sure you have Python installed 3.11+ and it is added to your path
 ```
 Once you've downloaded the files extract the folder so it's no longer a .zip file.
 ```
-### 3. Open The setup.bat File:
-
+### 3. Install requirements:
 ```
 You need to install all requirements using pip install requirements.txt
 ```
