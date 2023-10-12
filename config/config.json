@@ -1,0 +1,14 @@
+{
+  "api_key": "apikey31331",
+  "domain": "domain31131",
+  "invoice_type":"Monthly", 
+  "tax": 0,
+  "currency": "EUR", 
+  "exchange_currency": "PLN",
+  "additional_info": true,
+  "seller_tax_no": "PL311313131",
+  "seller_name": "jan kowalski",
+  "seller_city": "warszawa",
+  "seller_zip": "11-111",
+  "seller_street": "kowalska 123a"
+}
