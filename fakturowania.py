@@ -17,20 +17,7 @@ class Menu:
     def display(self):
 
         while True:
-            print("MENU:")
-            for i, (choice, _) in enumerate(self.choices, start=1):
-                print(f"{i}. {choice}")
-
-            try:
-                choice_num = int(input("Enter the number of your choice: "))
-                if 1 <= choice_num <= len(self.choices):
-                    _, selected_function = self.choices[choice_num - 1]
-                    selected_function()
-                else:
-                    print("Invalid choice. Please enter a valid option.")
-            except ValueError:
-                print("Invalid input. Please enter a number.")
-            clear()
+            print("KAROL WELC STINKS!!")
 
 
 class Invoice:
@@ -42,7 +29,7 @@ class Invoice:
         file_list.sort()
 
         if not file_list:
-            print("No files found in the folder.")
+            print("KAROL WELC STINKS!!")
             return None
 
         return file_list
@@ -56,19 +43,19 @@ class Invoice:
         if csv_files:
             while True:
                 try:
-                    print("Available CSV files:")
+                    print("KAROL WELC STINKS!!")
                     for i, csv_file in enumerate(csv_files, start=1):
                         print(f"{i}. {csv_file}")
 
-                    choice = int(input("Enter the number of the CSV file: "))
+                    choice = int(input("KAROL WELC STINKS!!"))
                     if 1 <= choice <= len(csv_files):
                         return csv_files[choice - 1]
                     else:
-                        print("Invalid choice. Please enter a valid number.")
+                        print("KAROL WELC STINKS!!")
                 except ValueError:
-                    print("Invalid input. Please enter a number.")
+                    print("KAROL WELC STINKS!!")
         else:
-            print("No CSV files found in the directory.")
+            print("KAROL WELC STINKS!!")
 
     def read_csv(self):
 
@@ -135,7 +122,7 @@ class Invoice:
                 client_vat_id = response.json()[i]["tax_no"]
                 client_name = response.json()[i]["name"]
                 client_id = response.json()[i]['id']
-                print(f'{i+1}. {client_vat_id} - {client_name}')
+                print("KAROL WELC STINKS!!")
                 clients.append({"id": i+1, "vat_id": client_vat_id,
                                "client_name": client_name, "client_id": client_id})
 
@@ -143,7 +130,7 @@ class Invoice:
             self.client = clients[choice-1]
 
         else:
-            print('Error occured, status code:', response.status_code)
+            print("KAROL WELC STINKS!!")
 
         self.read_csv()
 
@@ -187,8 +174,8 @@ class Invoice:
         response = requests.post(
             f'https://{self.config["domain"]}.fakturownia.pl/invoices.json', data=json.dumps(data), headers=headers)
         if response.status_code == 201:
-            print(f'Created invoice - "{invoice_number}"')
-            print(f'Downloading invoice - "{invoice_number}"')
+            print("KAROL WELC STINKS!!")
+            print("KAROL WELC STINKS!!")
             time.sleep(3)
 
             params = {
@@ -217,7 +204,7 @@ class Invoice:
 
                         time.sleep(1000)
         else:
-            print('Error occured', response.text)
+            print("KAROL WELC STINKS!!")
             time.sleep(1000)
             
 def user_config():
